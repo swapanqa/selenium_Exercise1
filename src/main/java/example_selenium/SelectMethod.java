@@ -2,12 +2,12 @@ package example_selenium;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 public class SelectMethod {
 	
@@ -33,6 +33,8 @@ public class SelectMethod {
 	 //To select an option - selectByVisibleText, selectByIndex, selectByValue
 	 //selectByVisibleText
 	 dropdown.selectByVisibleText("Automation Testing");
+	 
+	 driver.close();
 	 }
 	
 	

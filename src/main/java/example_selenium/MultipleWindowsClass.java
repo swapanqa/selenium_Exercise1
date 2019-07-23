@@ -3,9 +3,10 @@ package example_selenium;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class MultipleWindowsClass {
 	
@@ -39,6 +40,8 @@ public class MultipleWindowsClass {
 	 }
 	 // This is to switch to the main window
 	 driver.switchTo().window(mainWindow);
+	 
+	 driver.close();
 	 }
 	
 	
